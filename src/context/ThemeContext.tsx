@@ -13,7 +13,7 @@ const ThemeContext = createContext<ThemeContextType>({
 })
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [themeId, setThemeId] = useState<MoodTheme>("tuf")
+  const [themeId, setThemeId] = useState<MoodTheme>("chill")
 
   const theme = THEMES.find(t => t.id === themeId) ?? THEMES[0]
 
