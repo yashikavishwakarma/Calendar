@@ -4,7 +4,7 @@ import { THEMES } from "../themes/themes"
 
 interface ThemeContextType {
   theme: Theme
-  setTheme: (id: MoodTheme) => void
+  setTheme: (theme: Theme) => void
 }
 
 const ThemeContext = createContext<ThemeContextType>({
@@ -24,8 +24,12 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     })
   }, [theme])
 
+  const setTheme = (theme: Theme) => {
+    setThemeId(theme.id as MoodTheme)
+  }
+
   return (
-    <ThemeContext.Provider value={{ theme, setTheme: setThemeId }}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
     </ThemeContext.Provider>
   )

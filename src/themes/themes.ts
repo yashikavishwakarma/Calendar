@@ -1,34 +1,44 @@
-import type { Theme } from "../types/theme"
+﻿import type { Theme } from "../types/theme"
+
+const chillImage = new URL("../images/chill.jpg", import.meta.url).href
+const grindImage = new URL("../images/grind.avif", import.meta.url).href
+const aestheticImage = new URL("../images/softlife.webp", import.meta.url).href
+const midnightImage = new URL("../images/midnight.jpg", import.meta.url).href
 
 export const THEMES: Theme[] = [
   {
-  id: "tuf",
-  name: "TUF Mode",
-  mood: "grind szn ",
-//   emoji: "⚔️",
-  vars: {
-    "--bg-primary": "#0f0f0f",        // main dark bg
-    "--bg-secondary": "#181818",      // slightly lighter sections
-    "--bg-card": "#1f1f1f",           // cards
-    "--accent": "#ff7a18",            // STRIVER ORANGE 🔥
-    "--accent-soft": "#3b1f0f",       // subtle orange bg
-    "--text-primary": "#ffffff",      // main text
-    "--text-secondary": "#b3b3b3",    // secondary text
-    "--text-muted": "#6b7280",        // muted
-    "--border": "#2a2a2a",            // borders
-    "--header-from": "#1a1a1a",       
-    "--header-to": "#0f0f0f",
-    "--today-bg": "#ff7a18",          // highlight (important)
-    "--today-text": "#ffffff",
-    "--wave": "#0f0f0f",
-    "--day-label": "#9ca3af",
-  }
-},
+    id: "tuf",
+    name: "TUF Mode",
+    mood: "grind szn ",
+    image: "",
+    vars: {
+      "--bg-primary": "#0f0f0f",
+      "--bg-secondary": "#181818",
+      "--bg-card": "#1f1f1f",
+      "--accent": "#ff7a18",
+      "--accent-soft": "#3b1f0f",
+      "--text-primary": "#ffffff",
+      "--text-secondary": "#b3b3b3",
+      "--text-muted": "#6b7280",
+      "--border": "#2a2a2a",
+      "--header-from": "#1a1a1a",
+      "--header-to": "#1a1a1a",
+      "--today-bg": "#ff7a18",
+      "--today-text": "#ffffff",
+      "--wave": "#0f0f0f",
+      "--day-label": "#9ca3af",
+      "--date-bg": "rgba(255,255,255,0.06)",
+      "--date-today-bg": "rgba(255,255,255,0.14)",
+      "--date-border": "rgba(255,255,255,0.12)",
+      "--glass-bg": "rgba(16, 16, 16, 0.78)",
+      "--glass-border": "rgba(255, 255, 255, 0.08)",
+    }
+  },
   {
     id: "chill",
     name: "Chill Vibes",
     mood: "calm & cozy ",
-    // emoji: "🧊",
+    image: chillImage,
     vars: {
       "--bg-primary": "#f0f9ff",
       "--bg-secondary": "#e6f4fb",
@@ -45,13 +55,18 @@ export const THEMES: Theme[] = [
       "--today-text": "#ffffff",
       "--wave": "#ffffff",
       "--day-label": "#5c8ea3",
+      "--date-bg": "rgba(124,198,230,0.12)",
+      "--date-today-bg": "rgba(124,198,230,0.22)",
+      "--date-border": "rgba(124,198,230,0.2)",
+      "--glass-bg": "rgba(255, 255, 255, 0.82)",
+      "--glass-border": "rgba(124, 198, 230, 0.22)",
     }
   },
   {
     id: "grind",
     name: "Grind Mode",
     mood: "steady focus",
-    // emoji: "🌿",
+    image: grindImage,
     vars: {
       "--bg-primary": "#f4fbf6",
       "--bg-secondary": "#e3f3e8",
@@ -68,13 +83,18 @@ export const THEMES: Theme[] = [
       "--today-text": "#ffffff",
       "--wave": "#ffffff",
       "--day-label": "#5e8d72",
+      "--date-bg": "rgba(134,207,165,0.14)",
+      "--date-today-bg": "rgba(134,207,165,0.24)",
+      "--date-border": "rgba(134,207,165,0.2)",
+      "--glass-bg": "rgba(255, 255, 255, 0.82)",
+      "--glass-border": "rgba(134, 207, 165, 0.2)",
     }
   },
   {
     id: "aesthetic",
     name: "Aesthetic",
     mood: "soft life ",
-    // emoji: "🌸",
+    image: aestheticImage,
     vars: {
       "--bg-primary": "#fff1f6",
       "--bg-secondary": "#fde2ec",
@@ -91,36 +111,18 @@ export const THEMES: Theme[] = [
       "--today-text": "#ffffff",
       "--wave": "#ffffff",
       "--day-label": "#9c4d6c",
-    }
-  },
-  {
-    id: "chaos",
-    name: "Chaos Mode",
-    mood: "soft chaos ",
-    // emoji: "🌈",
-    vars: {
-      "--bg-primary": "#f6f3ff",
-      "--bg-secondary": "#ede9fe",
-      "--bg-card": "#ffffff",
-      "--accent": "#c4b5fd",
-      "--accent-soft": "#e9e4ff",
-      "--text-primary": "#4c3f91",
-      "--text-secondary": "#7b6fcf",
-      "--text-muted": "#b4a7f5",
-      "--border": "#e9e4ff",
-      "--header-from": "#ddd6fe",
-      "--header-to": "#f6f3ff",
-      "--today-bg": "#c4b5fd",
-      "--today-text": "#ffffff",
-      "--wave": "#ffffff",
-      "--day-label": "#7b6fcf",
+      "--date-bg": "rgba(244,167,195,0.18)",
+      "--date-today-bg": "rgba(244,167,195,0.28)",
+      "--date-border": "rgba(244,167,195,0.22)",
+      "--glass-bg": "rgba(255, 255, 255, 0.88)",
+      "--glass-border": "rgba(244, 167, 195, 0.22)",
     }
   },
   {
     id: "midnight",
     name: "Midnight",
     mood: "calm night ",
-    // emoji: "🌙",
+    image: midnightImage,
     vars: {
       "--bg-primary": "#f1f5f9",
       "--bg-secondary": "#e2e8f0",
@@ -137,6 +139,11 @@ export const THEMES: Theme[] = [
       "--today-text": "#ffffff",
       "--wave": "#ffffff",
       "--day-label": "#64748b",
+      "--date-bg": "rgba(165,180,252,0.18)",
+      "--date-today-bg": "rgba(165,180,252,0.28)",
+      "--date-border": "rgba(165,180,252,0.22)",
+      "--glass-bg": "rgba(255, 255, 255, 0.88)",
+      "--glass-border": "rgba(165, 180, 252, 0.22)",
     }
   },
 ]
