@@ -16,7 +16,7 @@ https://calendar1-wxtk.onrender.com/
 
 ## 🌟 What's This Magic About?
 
-**Mood Calendar** isn't just another calendar app—it's your personal mood board meets time management! 🎭 Transform boring date tracking into an interactive experience with themes, emojis, festivals, and that perfect chill vibe. Whether you're planning your next adventure or just want to sprinkle some fun on your schedule, we've got you covered!
+**Mood Calendar** isn't just another calendar app, it's your personal mood board meets time management! 🎭 Transform boring date tracking into an interactive experience with themes, emojis, festivals, and that perfect chill vibe. Whether you're planning your next adventure or just want to sprinkle some fun on your schedule, we've got you covered!
 
 ---
 
@@ -270,29 +270,3 @@ Love the calendar? Want to add a new theme or festival? We'd love your help!
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
-
-## 🙏 Acknowledgments
-
-- Built with ❤️ using React and TypeScript
-- Inspired by the need for more fun in calendar apps
-- Special thanks to the open-source community
-- Emoji support courtesy of Unicode Consortium
-
----
-
-## 📞 Get in Touch
-
-Found a bug? Have a feature request? Want to chat about calendar design?
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/mood-calendar/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/mood-calendar/discussions)
-
----
-
-> **Remember**: Life is too short for boring calendars. Make every day count with Mood Calendar! 🎨✨
-
----
-
-*Made with 💙 by calendar enthusiasts for calendar lovers everywhere*</content>
-<parameter name="filePath">c:\Users\yashi\Downloads\ft1\my-calendar\docs\README.md
