@@ -9,6 +9,11 @@
 
 ---
 
+## 🌐 Live Demo  
+https://calendar1-wxtk.onrender.com/
+
+---
+
 ## 🌟 What's This Magic About?
 
 **Mood Calendar** isn't just another calendar app—it's your personal mood board meets time management! 🎭 Transform boring date tracking into an interactive experience with themes, emojis, festivals, and that perfect chill vibe. Whether you're planning your next adventure or just want to sprinkle some fun on your schedule, we've got you covered!
