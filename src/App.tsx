@@ -84,7 +84,7 @@ function App() {
       </div>
 
       <div style={{ position: "relative", zIndex: 1, width: "100%", maxWidth: "1400px", minHeight: "80vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <Calendar language={language} translations={lang} />
+        <Calendar translations={lang} />
       </div>
     </div>
   )
