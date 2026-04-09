@@ -29,6 +29,4 @@ A modern and interactive calendar application built using React and TypeScript t
 - Styling: CSS Variables / Inline Styles  
 - State Management: React Hooks  
 
----
 
-## 📂 Project Structure
